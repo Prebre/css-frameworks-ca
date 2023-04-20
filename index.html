@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-widht, initial-scales=1.0" />
+  <meta name="description" content="Log in to your blooom account" />
+  <title>Login page | blooom</title>
+  <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+
+</head>
+
+<body>
+  <header>
+    <section><!--Border top--></section>
+    <img src="/images/Logo.png" class="" alt="large blooom logo" />
+    <i>
+      Don't have an account yet?<br />
+      Switch to <a href="">Signup page</a>.
+    </i>
+  </header>
+
+  <main>
+    <section class="">
+      <h1>Log in to blooom:</h1>
+      <form id="loginForm" name="loginForm" onsubmit="">
+        <label for="username">username:</label><br>
+        <input type="text" id="username" name="username"><br>
+        <label for="password">password:</label><br>
+        <input type="password" id="password" name="password"><br>
+        <input type="checkbox" id="remember" name="remember">Remember me.<br>
+        <input type="button" onclick="location.href='/profile/index.html';" value="log in to blooom">
+      </form>
+      <p><a href="">Cancel</a></p>
+    </section>
+  </main>
+
+  <footer>
+    <section>
+      <p>Copyright © blooom Inc. </p>
+    </section>
+  </footer>
+</body>
+
+</html>

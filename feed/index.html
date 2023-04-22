@@ -10,84 +10,321 @@
 
 </head>
 
-<body>
-    <header>
-        <section><!--Border top--></section>
-        <img src="../images/Logo.png" class="" alt="large blooom logo" />
-        <nav>
-            <ul>
-                <li>
-                    <p>add</p><img src="" class="" alt="">
-                </li>
-                <li>
-                    <p>feed</p><img src="" class="" alt="">
-                </li>
-                <li>
-                    <p>friends</p><img src="" class="" alt="">
-                </li>
-                <li>
-                    <p>search</p><img src="" class="" alt="">
-                </li>
-                <li>
-                    <p>profile</p><img src="" class="" alt="">
-                </li>
-            </ul>
-        </nav>
+<body class="bg-black bg-opacity-25">
+    <header class="bg-primary bg-opacity-25">
+        <section class="my-0 bg-dark"><!--Border top-->&#xA0;</section>
+        <section class="row g-0 px-5 pb-3">
+            <section class="col-4">
+                <a href="../index.html"><img src="../icons/Logo.png" class="mt-3 ms-3" alt="large blooom logo" /></a>
+            </section>
+            <section class="col-8 navbar">
+                <nav class="navbar-nav">
+                    <ul class="d-inline-flex list-group-numbered">
+                        <li class="mt-3 mx-3">
+                            <a href="" class="nav-link text-center">
+                                <p>add</p>
+                                <img src="../icons/add.png" class="w-50" alt="">
+                            </a>
+                        </li>
+                        <li class="mt-3 mx-3">
+                            <a href="index.html" class="nav-link text-center">
+                                <p>feed</p>
+                                <img src="../icons/rss.png" class="w-50" alt="">
+                            </a>
+                        </li>
+                        <li class="mt-3 mx-3">
+                            <a href="../profile/index.html" class="nav-link text-center">
+                                <p>friends</p>
+                                <img src="../icons/friends.png" class="w-50" alt="">
+                            </a>
+                        </li>
+                        <li class="mt-3 mx-3">
+                            <a href="" class="nav-link text-center">
+                                <p>search</p>
+                                <img src="../icons/magnifiying-glass.png" class="w-50" alt="">
+                            </a>
+                        </li>
+                        <li class="mt-3 mx-3">
+                            <a href="../profile/index.html" class="nav-link text-center">
+                                <p>profile</p>
+                                <img src="../icons/user.png" class="w-50" alt="">
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </section>
     </header>
 
-    <main>
-        <h1>post feed</h1>
-        <section>
-            <img src="" class="" alt="Exlamation icon">
-            <h2>newest posts</h2>
-        </section>
-        <section>
+    <main class="container">
+        <section id="posts" class="my-5">
             <!--Posts section-->
-            <div><img src="" class="" alt="Rounded profile picture">
-                <h2>daffodil-field</h2>
-                <p>Posted 55 minutes ago</p>
-                <p>Scientific Name: Narcissus. Daffodil, daffadowndilly, jonquil, lent lily - narcissus are iconic
-                    flowers well known to ancient civilisations for their botanical and medicinal value, and many of
-                    their names derive from their appearance in everyday life.</p>
-                <img src="" class="" alt="Comment bubble icon"><img src="" class="" alt="Heart icon"><img src=""
-                    class="" alt="Share icon">
+            <div class="border border-dark border-2 bg-white mb-3 rounded-5 p-3">
+                <div class="row">
+                    <div class="col-3">
+                        <img src="../profile-imgs/rose-petal.jpg"
+                            class="w-75 border border-secondary border-2 rounded-circle" alt="Rounded profile picture">
+                    </div>
+                    <h2 class="col-6">rose-petal</h2>
+                    <p class="col-3">Posted 8 minutes ago</p>
+                </div>
+                <div class="col-12">
+                    <p>The quick, brown fox jumps over a lazy dog. DJs.</p>
+                </div>
+                <div class="row text-center">
+                    <div class="col-3 w-25">
+                        <a href="" class="col-1 mx-1"><img src="../icons/star-full.png" class="w-25"
+                                alt="Full star icon"></a>
+                    </div>
+                    <div class="col-3 w-25">
+                        <a href="" class="col-1 mx-1"><img src="../icons/comment.png" class="w-25"
+                                alt="Comment bubble icon"></a>
+                    </div>
+                    <div class="col-3 w-25">
+                        <a href="" class="col-1 mx-1"><img src="../icons/heart.png" class="w-25" alt="Heart icon"></a>
+                    </div>
+                    <div class="col-3 w-25">
+                        <a href="" class="col-1 mx-1"><img src="../icons/share.png" class="w-25" alt="Share icon"></a>
+                    </div>
+                </div>
             </div>
-            <div><img src="" class="" alt="Rounded profile picture">
-                <h2>daffodil-field</h2>
-                <p>Posted on april 17th</p>
-                <p>Daffodils are a hardy perennials that come back year after year, spreading and often naturalizing.
-                    They are a fall-planted bulb usually planted in October and the flowers bloom in late winter or
-                    early spring. (They are the March birth flower, after all!) Most daffodils grow easily in most
-                    regions of North America, except in the hottest, wettest areas, such as South Florida.</p>
-                <img src="" class="" alt="Comment bubble icon"><img src="" class="" alt="Heart icon"><img src=""
-                    class="" alt="Share icon">
+            <div class="border border-dark border-2 bg-white mb-3 rounded-5 p-3">
+                <div class="row">
+                    <div class="col-3">
+                        <img src="../profile-imgs/daffodil-field.jpg"
+                            class="w-75 border border-secondary border-2 rounded-circle" alt="Rounded profile picture">
+                    </div>
+                    <h2 class="col-6">daffodil-field</h2>
+                    <p class="col-3">Posted 55 minutes ago</p>
+                </div>
+                <div class="col-12">
+                    <p>Scientific Name: Narcissus. Daffodil, daffadowndilly, jonquil, lent lily - narcissus are iconic
+                        flowers well known to ancient civilisations for their botanical and medicinal value, and many of
+                        their names derive from their appearance in everyday life.</p>
+                </div>
+                <div class="row text-center">
+                    <div class="col-3 w-25">
+                        <a href="" class="col-1 mx-1"><img src="../icons/star-empty.png" class="w-25"
+                                alt="Empty star icon"></a>
+                    </div>
+                    <div class="col-3 w-25">
+                        <a href="" class="col-1 mx-1"><img src="../icons/comment.png" class="w-25"
+                                alt="Comment bubble icon"></a>
+                    </div>
+                    <div class="col-3 w-25">
+                        <a href="" class="col-1 mx-1"><img src="../icons/heart.png" class="w-25" alt="Heart icon"></a>
+                    </div>
+                    <div class="col-3 w-25">
+                        <a href="" class="col-1 mx-1"><img src="../icons/share.png" class="w-25" alt="Share icon"></a>
+                    </div>
+                </div>
             </div>
-            <div><img src="" class="" alt="Rounded profile picture">
-                <h2>daffodil-field</h2>
-                <p>Posted on april 14th</p>
-                <img src="" class="" alt="Field of white daffodils">
-                <img src="" class="" alt="Bouquet of yellow daffodils">
-                <img src="" class="" alt="A single white daffodil">
-                <img src="" class="" alt="Closeup of yellow daffodils">
-                <img src="" class="" alt="Comment bubble icon"><img src="" class="" alt="Heart icon"><img src=""
-                    class="" alt="Share icon">
+            <div class="border border-dark border-2 bg-white mb-3 rounded-5 p-3">
+                <div class="row">
+                    <div class="col-3">
+                        <img src="../profile-imgs/lily-pad.jpg"
+                            class="w-75 border border-secondary border-2 rounded-circle" alt="Rounded profile picture">
+                    </div>
+                    <h2 class="col-6">lily-pad</h2>
+                    <p class="col-3">Posted 1 hour ago</p>
+                </div>
+                <div class="col-12">
+                    <p>Zwei flinke Boxer jagen die quirlige Eva und ihren Mops durch Sylt. Franz jagt</p>
+                </div>
+                <div class="row text-center">
+                    <div class="col-3 w-25">
+                        <a href="" class="col-1 mx-1"><img src="../icons/star-empty.png" class="w-25"
+                                alt="Empty star icon"></a>
+                    </div>
+                    <div class="col-3 w-25">
+                        <a href="" class="col-1 mx-1"><img src="../icons/comment.png" class="w-25"
+                                alt="Comment bubble icon"></a>
+                    </div>
+                    <div class="col-3 w-25">
+                        <a href="" class="col-1 mx-1"><img src="../icons/heart.png" class="w-25" alt="Heart icon"></a>
+                    </div>
+                    <div class="col-3 w-25">
+                        <a href="" class="col-1 mx-1"><img src="../icons/share.png" class="w-25" alt="Share icon"></a>
+                    </div>
+                </div>
             </div>
-            <div><img src="" class="" alt="Rounded profile picture">
-                <h2>daffodil-field</h2>
-                <p>Posted on april 12th</p>
-                <img src="" class="" alt="A single yellow daffodil">
-                <img src="" class="" alt="A pair of white daffodils">
-                <img src="" class="" alt="A table decorated with a small yellow daffodil bouquet">
-                <img src="" class="" alt="Closeup of white daffodils">
-                <img src="" class="" alt="Comment bubble icon"><img src="" class="" alt="Heart icon"><img src=""
-                    class="" alt="Share icon">
+            <div class="border border-dark border-2 bg-white mb-3 rounded-5 p-3">
+                <div class="row">
+                    <div class="col-3">
+                        <img src="../profile-imgs/tulip-stem.jpg"
+                            class="w-75 border border-secondary border-2 rounded-circle" alt="Rounded profile picture">
+                    </div>
+                    <h2 class="col-6">tulip-stem</h2>
+                    <p class="col-3">Posted 7 hours ago</p>
+                </div>
+                <div class="col-12">
+                    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt
+                        ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>
+                </div>
+                <div class="row text-center">
+                    <div class="col-3 w-25">
+                        <a href="" class="col-1 mx-1"><img src="../icons/star-empty.png" class="w-25"
+                                alt="Empty star icon"></a>
+                    </div>
+                    <div class="col-3 w-25">
+                        <a href="" class="col-1 mx-1"><img src="../icons/comment.png" class="w-25"
+                                alt="Comment bubble icon"></a>
+                    </div>
+                    <div class="col-3 w-25">
+                        <a href="" class="col-1 mx-1"><img src="../icons/heart.png" class="w-25" alt="Heart icon"></a>
+                    </div>
+                    <div class="col-3 w-25">
+                        <a href="" class="col-1 mx-1"><img src="../icons/share.png" class="w-25" alt="Share icon"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="border border-dark border-2 bg-white mb-3 rounded-5 p-3">
+                <div class="row">
+                    <div class="col-3">
+                        <img src="../profile-imgs/orchid-bed.jpg"
+                            class="w-75 border border-secondary border-2 rounded-circle" alt="Rounded profile picture">
+                    </div>
+                    <h2 class="col-6">orchid-bed</h2>
+                    <p class="col-3">Posted on april 20th</p>
+                </div>
+                <div class="col-12 text-center">
+                    <a href="" class="col-3 mx-1"><img src="../images/beach-blue-chairs.jpg"
+                            class="img-thumbnail h-25 w-25" alt="Two blue chairs sitting on the beach"></a>
+                    <a href="" class="col-3 mx-1"><img src="../images/beach-ocean.jpg" class="img-thumbnail h-25 w-25"
+                            alt="A sun setting over the ocean and the edge of the sandy beach"></a>
+                    <a href="" class="col-3 mx-1"><img src="../images/beach-path.jpg" class="img-thumbnail h-25 w-25"
+                            alt="A path leading to a beach"></a>
+                    <a href="" class="col-3 mx-1"><img src="../images/beach-sunglasses.jpg" class="img-thumbnail w-25"
+                            alt="A pair of sunglasses sitting in the beach"></a>
+                </div>
+                <div class="row text-center">
+                    <div class="col-3 w-25">
+                        <a href="" class="col-1 mx-1"><img src="../icons/star-empty.png" class="w-25"
+                                alt="Empty star icon"></a>
+                    </div>
+                    <div class="col-3 w-25">
+                        <a href="" class="col-1 mx-1"><img src="../icons/comment.png" class="w-25"
+                                alt="Comment bubble icon"></a>
+                    </div>
+                    <div class="col-3 w-25">
+                        <a href="" class="col-1 mx-1"><img src="../icons/heart.png" class="w-25" alt="Heart icon"></a>
+                    </div>
+                    <div class="col-3 w-25">
+                        <a href="" class="col-1 mx-1"><img src="../icons/share.png" class="w-25" alt="Share icon"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="border border-dark border-2 bg-white mb-3 rounded-5 p-3">
+                <div class="row">
+                    <div class="col-3">
+                        <img src="../profile-imgs/red-carnation.jpg"
+                            class="w-75 border border-secondary border-2 rounded-circle" alt="Rounded profile picture">
+                    </div>
+                    <h2 class="col-6">red-carnation</h2>
+                    <p class="col-3">Posted on april 19th</p>
+                </div>
+                <div class="col-12">
+                    <p>But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was
+                        born and I will give you a complete account of the system, and expound the actual teachings of
+                        the great explorer of the truth, the master-builder of human happiness.</p>
+                </div>
+                <div class="row text-center">
+                    <div class="col-3 w-25">
+                        <a href="" class="col-1 mx-1"><img src="../icons/star-empty.png" class="w-25"
+                                alt="Empty star icon"></a>
+                    </div>
+                    <div class="col-3 w-25">
+                        <a href="" class="col-1 mx-1"><img src="../icons/comment.png" class="w-25"
+                                alt="Comment bubble icon"></a>
+                    </div>
+                    <div class="col-3 w-25">
+                        <a href="" class="col-1 mx-1"><img src="../icons/heart.png" class="w-25" alt="Heart icon"></a>
+                    </div>
+                    <div class="col-3 w-25">
+                        <a href="" class="col-1 mx-1"><img src="../icons/share.png" class="w-25" alt="Share icon"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="border border-dark border-2 bg-white mb-3 rounded-5 p-3">
+                <div class="row">
+                    <div class="col-3">
+                        <img src="../profile-imgs/freesia-bouquet.jpg"
+                            class="w-75 border border-secondary border-2 rounded-circle" alt="Rounded profile picture">
+                    </div>
+                    <h2 class="col-6">freesia-bouquet</h2>
+                    <p class="col-3">Posted on april 17th</p>
+                </div>
+                <div class="col-12 text-center">
+                    <a href="" class="col-2 mx-1"><img src="../images/hike-path-woods.jpg"
+                            class="img-thumbnail h-25 w-25" alt="Hikers walking a path in the woods"></a>
+                    <a href="" class="col-2 mx-1"><img src="../images/hike-path-woman.jpg"
+                            class="img-thumbnail h-25 w-25" alt="The backhead of a woman hiking in the woods"></a>
+                    <a href="" class="col-2 mx-1"><img src="../images/hike-path-man.jpg" class="img-thumbnail h-25 w-25"
+                            alt="The backhead of a man hiking in the woods"></a>
+                    <a href="" class="col-2 mx-1"><img src="../images/hike-path-hills.jpg" class="img-thumbnail w-25"
+                            alt="Hikers travelling through some hills"></a>
+                    <a href="" class="col-2 mx-1"><img src="../images/hike-path-field.jpg"
+                            class="img-thumbnail h-25 w-25" alt="Hikers travelling through a field"></a>
+                    <a href="" class="col-2 mx-1"><img src="../images/hike-path-edge.jpg" class="img-thumbnail w-25"
+                            alt="Hiker on the edge of a path"></a>
+                </div>
+                <div class="row text-center">
+                    <div class="col-3 w-25">
+                        <a href="" class="col-1 mx-1"><img src="../icons/star-full.png" class="w-25"
+                                alt="Full star icon"></a>
+                    </div>
+                    <div class="col-3 w-25">
+                        <a href="" class="col-1 mx-1"><img src="../icons/comment.png" class="w-25"
+                                alt="Comment bubble icon"></a>
+                    </div>
+                    <div class="col-3 w-25">
+                        <a href="" class="col-1 mx-1"><img src="../icons/heart.png" class="w-25" alt="Heart icon"></a>
+                    </div>
+                    <div class="col-3 w-25">
+                        <a href="" class="col-1 mx-1"><img src="../icons/share.png" class="w-25" alt="Share icon"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="border border-dark border-2 bg-white mb-3 rounded-5 p-3">
+                <div class="row">
+                    <div class="col-3">
+                        <img src="../profile-imgs/daffodil-field.jpg"
+                            class="w-75 border border-secondary border-2 rounded-circle" alt="Rounded profile picture">
+                    </div>
+                    <h2 class="col-6">daffodil-field</h2>
+                    <p class="col-3">Posted on april 17th</p>
+                </div>
+                <div class="col-12">
+                    <p>Daffodils are a hardy perennials that come back year after year, spreading and often
+                        naturalizing.
+                        They are a fall-planted bulb usually planted in October and the flowers bloom in late winter or
+                        early spring. (They are the March birth flower, after all!) Most daffodils grow easily in most
+                        regions of North America, except in the hottest, wettest areas, such as South Florida.</p>
+                </div>
+                <div class="row text-center">
+                    <div class="col-3 w-25">
+                        <a href="" class="col-1 mx-1"><img src="../icons/star-empty.png" class="w-25"
+                                alt="Empty star icon"></a>
+                    </div>
+                    <div class="col-3 w-25">
+                        <a href="" class="col-1 mx-1"><img src="../icons/comment.png" class="w-25"
+                                alt="Comment bubble icon"></a>
+                    </div>
+                    <div class="col-3 w-25">
+                        <a href="" class="col-1 mx-1"><img src="../icons/heart.png" class="w-25" alt="Heart icon"></a>
+                    </div>
+                    <div class="col-3 w-25">
+                        <a href="" class="col-1 mx-1"><img src="../icons/share.png" class="w-25" alt="Share icon"></a>
+                    </div>
+                </div>
             </div>
         </section>
+        <section class="my-5">&#xA0;</section>
     </main>
 
-    <footer>
-        <section>
-            <p>Copyright © blooom Inc. </p>
+    <footer class="fixed-bottom">
+        <section class="bg-dark mt-1 mb-0 text-center blockquote-footer">
+            <p>Copyright © blooom Inc.</p>
+            &#xA0;
         </section>
     </footer>
 </body>

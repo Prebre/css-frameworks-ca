@@ -11,33 +11,38 @@
 </head>
 
 <body>
-  <header>
-    <section><!--Border top--></section>
-    <img src="/images/Logo.png" class="" alt="large blooom logo" />
+  <header class="row g-0 text-center">
+    <section class="col-12 my-0 bg-dark"><!--Border top-->&#xA0;</section>
+    <section class="container">
+      <img src="/icons/Logo.png" class="bg-primary bg-opacity-25 w-25 rounded-4 mx-auto my-3 p-4"
+        alt="large blooom logo" />
+    </section>
     <i>
       Don't have an account yet?<br />
       Switch to <a href="">Signup page</a>.
     </i>
   </header>
 
-  <main>
-    <section class="">
-      <h1>Log in to blooom:</h1>
+  <main class="container">
+    <section class="text-center">
+      <h1 class="mt-5">Log in to blooom:</h1>
       <form id="loginForm" name="loginForm" onsubmit="">
-        <label for="username">username:</label><br>
-        <input type="text" id="username" name="username"><br>
-        <label for="password">password:</label><br>
-        <input type="password" id="password" name="password"><br>
-        <input type="checkbox" id="remember" name="remember">Remember me.<br>
-        <input type="button" onclick="location.href='/profile/index.html';" value="log in to blooom">
+        <label for="username" class="mt-2">Username:</label><br>
+        <input type="text" id="username" name="username" class="mt-1" required><br>
+        <label for="password" class="mt-2">Password:</label><br>
+        <input type="password" id="password" name="password" class="mt-1" required minlength="8"><br>
+        <input type="checkbox" id="remember" name="remember" class="mt-3">&#xA0; <i>Remember me.</i><br>
+        <input type="button" onclick="location.href='/profile/index.html';" value="log in to blooom" class="mt-3">
       </form>
-      <p><a href="">Cancel</a></p>
+      <p class="mt-3"><a href=""><i>Cancel</i></a></p>
     </section>
+    <section class="my-5">&#xA0;</section>
   </main>
 
-  <footer>
-    <section>
-      <p>Copyright © blooom Inc. </p>
+  <footer class="fixed-bottom">
+    <section class="bg-dark mt-1 mb-0 text-center blockquote-footer">
+      <p>Copyright © blooom Inc.</p>
+      &#xA0;
     </section>
   </footer>
 </body>

@@ -3,7 +3,9 @@
 ## Install
 
 npm i
+
 npm run build
+
 Open in Live Server
 
 ## Goal

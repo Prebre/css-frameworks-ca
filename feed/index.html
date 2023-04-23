@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-widht, initial-scales=1.0" />
+    <meta name="description" content="Your blooom feed" />
+    <title>Feed page | blooom</title>
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+
+</head>
+
+<body class="bg-black bg-opacity-25">
+    <header class="bg-primary bg-opacity-25">
+        <section class="my-0 bg-dark"><!--Border top-->&#xA0;</section>
+        <section class="row my-0">
+            <div class="col-3 ps-3 pt-3">
+                <a href="../index.html"><img src="../icons/logo.png" class="h-75 ms-3" alt="blooom logo" /></a>
+            </div>
+            <nav class="col-9 pt-3 text-start">
+                <ul class="d-inline-flex mb-0 list-group-numbered">
+                    <li class="mt-3 mx-3">
+                        <a href="../profile/index.html" class="nav-link text-center">
+                            <p>profile</p>
+                            <img src="../icons/user.png" class="w-50" alt="Profile icon">
+                        </a>
+                    </li>
+                    <li class="mt-3 mx-3">
+                        <a href="../feed/new-post.html" class="nav-link text-center">
+                            <p>add post</p>
+                            <img src="../icons/add.png" class="w-50" alt="Add icon">
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </section>
+        <div class="text-center my-0">
+            <input type="text" placeholder="Search.." name="search" class="rounded-5 p-1 w-50 m-0">
+            <button type="submit" class="btn p-0 mb-3"><img src="../icons/magnifiying-glass.png"
+                    class="w-50 h-50 m-0 p-0" alt="Magnifying glass icon"></button>
+        </div>
+    </header>
+
+    <main class="container">
+
+
+        <section class="row text-center">
+            <div class="mt-3">
+                <label for="post-sort">sort options:</label>
+                <select name="post-sort" id="post-sort" onchange="location = this.value;">
+                    <option value="index.html">newest</option>
+                    <option value="feed-texts.html">text posts</option>
+                    <option value="feed-imgs.html">picture posts</option>
+                    <option value="feed-others.html">other users posts</option>
+                </select>
+            </div>
+        </section>
+
+
+        <section id="post-feed" class="m-5">
+            <div class="row">
+                <h2 class="text-center">newest posts</h2>
+                <div class="col-sm-12 col-md-6 col-lg-4 border border-dark border-2 bg-white mb-3 rounded-5 p-3">
+                    <img src="../profile-imgs/rose-petal.jpg"
+                        class="w-25 border border-secondary border-2 rounded-circle float-start me-5"
+                        alt="Rounded profile picture">
+                    <p class="text-end fst-italic">8 minutes ago</p>
+                    <h4>rose-petal posted:</h2>
+                        <p>The quick, brown fox jumps over a lazy dog. DJs flock by when MTV ax quiz prog.</p>
+                </div>
+
+                <div class="col-sm-12 col-md-6 col-lg-4 border border-dark border-2 bg-white mb-3 rounded-5 p-3">
+                    <img src="../profile-imgs/daffodil-field.jpg"
+                        class="w-25 border border-secondary border-2 rounded-circle float-start me-5"
+                        alt="Rounded profile picture">
+                    <p class="text-end fst-italic">55 minutes ago</p>
+                    <h4>daffodil-field posted:</h4>
+                    <p>Scientific Name: Narcissus. Daffodil, daffadowndilly, jonquil, lent lily - narcissus are
+                        iconic flowers well known to ancient civilisations for their botanical and medicinal value,
+                        and many of their names derive from their appearance in everyday life.</p>
+                </div>
+
+                <div class="col-sm-12 col-md-6 col-lg-4 border border-dark border-2 bg-white mb-3 rounded-5 p-3">
+                    <img src="../profile-imgs/lily-pad.jpg"
+                        class="w-25 border border-secondary border-2 rounded-circle float-start me-5"
+                        alt="Rounded profile picture">
+                    <p class="text-end fst-italic">2 hours ago</p>
+                    <h4>lily-pad posted:</h4>
+                    <p>Zwei flinke Boxer jagen die quirlige Eva und ihren Mops durch Sylt. Franz jagt</p>
+                </div>
+
+                <div class="col-sm-12 col-md-6 col-lg-4 border border-dark border-2 bg-white mb-3 rounded-5 p-3">
+                    <img src="../profile-imgs/tulip-stem.jpg"
+                        class="w-25 border border-secondary border-2 rounded-circle float-start me-5"
+                        alt="Rounded profile picture">
+                    <p class="text-end fst-italic">7 hours ago</p>
+                    <h4>tulip-stem posted:</h4>
+                    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt
+                        ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>
+                </div>
+
+                <div class="col-sm-12 col-md-6 col-lg-4 border border-dark border-2 bg-white mb-3 rounded-5 p-3">
+                    <img src="../profile-imgs/orchid-bed.jpg"
+                        class="w-25 border border-secondary border-2 rounded-circle float-start me-5"
+                        alt="Rounded profile picture">
+                    <p class="text-end fst-italic">April 20th</p>
+                    <h4>orchid-bed posted:</h2>
+                        <a href="" class="mx-1"><img src="../images/beach-blue-chairs.jpg"
+                                class="img-thumbnail h-25 w-25" alt="Two blue chairs sitting on the beach"></a>
+                        <a href="" class="mx-1"><img src="../images/beach-ocean.jpg" class="img-thumbnail h-25 w-25"
+                                alt="A sun setting over the ocean and the edge of the sandy beach"></a>
+                        <a href="" class="mx-1"><img src="../images/beach-path.jpg" class="img-thumbnail h-25 w-25"
+                                alt="A path leading to a beach"></a>
+                        <a href="" class="mx-1"><img src="../images/beach-sunglasses.jpg"
+                                class="img-thumbnail h-25 w-25" alt="A pair of sunglasses sitting in the beach"></a>
+
+                </div>
+
+                <div class="col-sm-12 col-md-6 col-lg-4 border border-dark border-2 bg-white mb-3 rounded-5 p-3">
+                    <img src="../profile-imgs/red-carnation.jpg"
+                        class="w-25 border border-secondary border-2 rounded-circle float-start me-5"
+                        alt="Rounded profile picture">
+                    <p class="text-end fst-italic">April 19th</p>
+                    <h4>red-carnation posted:</h4>
+                    <p>But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was
+                        born and I will give you a complete account of the system, and expound the actual teachings of
+                        the great explorer of the truth, the master-builder of human happiness.</p>
+
+                </div>
+
+                <div class="col-sm-12 col-md-6 col-lg-4 border border-dark border-2 bg-white mb-3 rounded-5 p-3">
+                    <img src="../profile-imgs/freesia-bouquet.jpg"
+                        class="w-25 border border-secondary border-2 rounded-circle float-start me-5"
+                        alt="Rounded profile picture">
+                    <p class="text-end fst-italic">April 17th</p>
+                    <h4>freesia-bouquet posted:</h4>
+                    <a href="" class="mx-1"><img src="../images/hike-path-woods.jpg" class="img-thumbnail h-25 w-25"
+                            alt="Hikers walking a path in the woods"></a>
+                    <a href="" class="mx-1"><img src="../images/hike-path-woman.jpg" class="img-thumbnail h-25 w-25"
+                            alt="The backhead of a woman hiking in the woods"></a>
+                    <a href="" class="mx-1"><img src="../images/hike-path-man.jpg" class="img-thumbnail h-25 w-25"
+                            alt="The backhead of a man hiking in the woods"></a>
+                    <a href="" class="mx-1"><img src="../images/hike-path-hills.jpg" class="img-thumbnail w-25"
+                            alt="Hikers travelling through some hills"></a>
+                    <a href="" class="mx-1"><img src="../images/hike-path-field.jpg" class="img-thumbnail h-25 w-25"
+                            alt="Hikers travelling through a field"></a>
+                    <a href="" class="mx-1"><img src="../images/hike-path-edge.jpg" class="img-thumbnail w-25"
+                            alt="Hiker on the edge of a path"></a>
+                </div>
+
+                <div class="col-sm-12 col-md-6 col-lg-4 border border-dark border-2 bg-white mb-3 rounded-5 p-3">
+                    <img src="../profile-imgs/daffodil-field.jpg"
+                        class="w-25 border border-secondary border-2 rounded-circle float-start me-5"
+                        alt="Rounded profile picture">
+                    <p class="text-end fst-italic">April 16th</p>
+                    <h4>daffodil-field posted:</h4>
+                    <p>Daffodils are a hardy perennials that come back year after year, spreading and often
+                        naturalizing. They are a fall-planted bulb usually planted in October and the flowers bloom in
+                        late winter or early spring. (They are the March birth flower, after all!) Most daffodils grow
+                        easily in most regions of North America, except in the hottest, wettest areas, such as South
+                        Florida. </p>
+                </div>
+
+                <div class="col-sm-12 col-md-6 col-lg-4 border border-dark border-2 bg-white mb-3 rounded-5 p-3">
+                    <img src="../profile-imgs/anemone-flower.jpg"
+                        class="w-25 border border-secondary border-2 rounded-circle float-start me-5"
+                        alt="Rounded profile picture">
+                    <p class="text-end fst-italic">April 15th</p>
+                    <h4>anemone-flower posted:</h4>
+                    <p>Li Europan lingues es membres del sam familie. Lor separat existentie es un myth. Por scientie,
+                        musica, sport etc, litot Europa usa li sam vocabular. Li lingues differe solmen in li
+                        grammatica, li pronunciation e li plu commun vocabules. Omnicos directe al desirabilite de un
+                        nov lingua franca: On refusa continuar payar custosi traductores.</p>
+                </div>
+
+                <div class="col-sm-12 col-md-6 col-lg-4 border border-dark border-2 bg-white mb-3 rounded-5 p-3">
+                    <img src="../profile-imgs/sunflower-seed.jpg"
+                        class="w-25 border border-secondary border-2 rounded-circle float-start me-5"
+                        alt="Rounded profile picture">
+                    <p class="text-end fst-italic">April 15th</p>
+                    <h4>sunflower-seed posted:</h4>
+                    <p>Waltz, bad nymph, for quick jigs vex! Fox nymphs grab quick-jived waltz. Brick quiz whangs jumpy
+                        veldt fox. Bright vixens jump; dozy fowl quack. Quick wafting zephyrs vex bold Jim. Quick
+                        zephyrs blow, vexing daft Jim. Sex-charged fop blew my junk TV quiz. How quickly daft jumping
+                        zebras vex. Two driven jocks help fax my big quiz. Quick, Baz, get my woven flax jodhpurs!</p>
+                </div>
+
+                <div class="col-sm-12 col-md-6 col-lg-4 border border-dark border-2 bg-white mb-3 rounded-5 p-3">
+                    <img src="../profile-imgs/daffodil-field.jpg"
+                        class="w-25 border border-secondary border-2 rounded-circle float-start me-5"
+                        alt="Rounded profile picture">
+                    <p class="text-end fst-italic">April 14th</p>
+                    <h4>daffodil-field posted:</h2>
+                        <a href="" class="mx-1"><img src="../images/white-daffodil-field.jpg"
+                                class="img-thumbnail h-25 w-25" alt="Field of white daffodils"></a>
+                        <a href="" class="mx-1"><img src="../images/yellow-daffodil-bouquet.jpg"
+                                class="img-thumbnail h-25 w-25" alt="Bouquet of yellow daffodils"></a>
+                        <a href="" class="mx-1"><img src="../images/white-daffodil-single.jpg"
+                                class="img-thumbnail h-25 w-25" alt="A single white daffodil"></a>
+                        <a href="" class="mx-1"><img src="../images/yellow-daffodil-closeup.jpg"
+                                class="img-thumbnail w-25" alt="Closeup of yellow daffodils"></a>
+                </div>
+
+                <div class="col-sm-12 col-md-6 col-lg-4 border border-dark border-2 bg-white mb-3 rounded-5 p-3">
+                    <img src="../profile-imgs/chrysanthemum.jpg"
+                        class="w-25 border border-secondary border-2 rounded-circle float-start me-5"
+                        alt="Rounded profile picture">
+                    <p class="text-end fst-italic">April 13th</p>
+                    <h4>chrysanthemum posted:</h4>
+                    <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there
+                        live the blind texts.</p>
+                </div>
+
+                <div class="col-sm-12 col-md-6 col-lg-4 border border-dark border-2 bg-white mb-3 rounded-5 p-3">
+                    <img src="../profile-imgs/hyacinth-petal.jpg"
+                        class="w-25 border border-secondary border-2 rounded-circle float-start me-5"
+                        alt="Rounded profile picture">
+                    <p class="text-end fst-italic">April 13th</p>
+                    <h4>hyacinth-petal posted:</h4>
+                    <p>One morning, when Gregor Samsa woke from troubled dreams, he found himself transformed in his bed
+                        into a horrible vermin. He lay on his armour-like back, and if he lifted his head a little he
+                        could see his brown belly, slightly domed and divided by arches into stiff sections.</p>
+                </div>
+
+                <div class="col-sm-12 col-md-6 col-lg-4 border border-dark border-2 bg-white mb-3 rounded-5 p-3">
+                    <img src="../profile-imgs/daffodil-field.jpg"
+                        class="w-25 border border-secondary border-2 rounded-circle float-start me-5"
+                        alt="Rounded profile picture">
+                    <p class="text-end fst-italic">April 12th</p>
+                    <h4>daffodil-field posted:</h4>
+                    <a href="" class="mx-1"><img src="../images/yellow-daffodil-single.jpg"
+                            class="img-thumbnail h-25 w-25" alt="A single yellow daffodil"></a>
+                    <a href="" class="mx-1"><img src="../images/white-daffodil-pair.jpg" class="img-thumbnail h-25 w-25"
+                            alt="A pair of white daffodils"></a>
+                    <a href="" class="mx-1"><img src="../images/yellow-daffodil-table.jpg"
+                            class="img-thumbnail h-25 w-25"
+                            alt="A table decorated with a small yellow daffodil bouquet"></a>
+                    <a href="" class="mx-1"><img src="../images/white-daffodil-closeup.jpg" class="img-thumbnail w-25"
+                            alt="Closeup of white daffodils"></a>
+                </div>
+
+                <div class="col-sm-12 col-md-6 col-lg-4 border border-dark border-2 bg-white mb-3 rounded-5 p-3">
+                    <img src="../profile-imgs/gladiolous-bed.jpg"
+                        class="w-25 border border-secondary border-2 rounded-circle float-start me-5"
+                        alt="Rounded profile picture">
+                    <p class="text-end fst-italic">April 10th</p>
+                    <h4>gladiolous-bed posted:</h4>
+                    <a href="" class="mx-1"><img src="../images/street-daytime-bright.jpg"
+                            class="img-thumbnail h-25 w-25" alt="Street in daytime surrounded by stone houses"></a>
+                    <a href="" class="mx-1"><img src="../images/street-twilight-bright.jpg"
+                            class="img-thumbnail h-25 w-25" alt="A dark street lighted up by street signs"></a>
+                    <a href="" class="mx-1"><img src="../images/street-twilight-red-lamp.jpg"
+                            class="img-thumbnail h-25 w-25"
+                            alt="A dark street with a single, red light shining down on it"></a>
+                    <a href="" class="mx-1"><img src="../images/street-nighttime-dark.jpg" class="img-thumbnail w-25"
+                            alt="A dark street during nighttime"></a>
+                </div>
+
+            </div>
+        </section>
+        <section class="my-5">&#xA0;</section>
+    </main>
+
+    <footer class="fixed-bottom">
+        <section class="bg-dark mt-1 mb-0 text-center blockquote-footer">
+            <p>Copyright © blooom Inc.</p>
+            &#xA0;
+        </section>
+    </footer>
+</body>
+
+</html>

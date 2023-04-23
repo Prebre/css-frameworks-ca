@@ -1,5 +1,13 @@
 # css-frameworks-ca
 
+## Install
+
+npm i
+
+npm run build
+
+Open in Live Server
+
 ## Goal
 
 To apply knowledge of Bootstrap and SASS to build a responsive front end for a social media application.

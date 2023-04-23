@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-widht, initial-scales=1.0" />
-    <meta name="description" content="Your blooom feed" />
+    <meta name="description" content="Your blooom profile page" />
     <title>Feed page | blooom</title>
     <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
 
@@ -58,16 +58,17 @@
                 <h4>sort options:</h4>
             </div>
             <div class="col-2">
-                <button
-                    class="btn btn-primary btn-outline-dark mt-2 rounded-5 fw-semibold fs-4 text-decoration-underline">newest</button>
+                <button class="btn btn-light btn-outline-dark mt-2 rounded-5 fw-semibold fs-4"><a href="index.html"
+                        class="page-link">newest</a></button>
             </div>
             <div class="col-2">
                 <button class="btn btn-light btn-outline-dark mt-2 rounded-5 fw-semibold fs-4"><a href="feed-texts.html"
-                        class="page-link">texts</a></button>
+                        class="page-link">
+                        texts</a></button>
             </div>
             <div class="col-2">
-                <button class="btn btn-light btn-outline-dark mt-2 rounded-5 fw-semibold fs-4"><a href="feed-imgs.html"
-                        class="page-link">pictures</a></button>
+                <button
+                    class="btn btn-primary btn-outline-dark mt-2 rounded-5 fw-semibold fs-4 text-decoration-underline">pictures</button>
             </div>
             <div class="col-2">
                 <button class="btn btn-light btn-outline-dark mt-2 rounded-5 fw-semibold fs-4"><a
@@ -79,46 +80,7 @@
 
         <section id="post-feed" class="m-5">
             <div class="row">
-                <h2 class="text-center">newest posts</h2>
-                <div class="col-6 border border-dark border-2 bg-white mb-3 rounded-5 p-3">
-                    <img src="../profile-imgs/rose-petal.jpg"
-                        class="w-25 border border-secondary border-2 rounded-circle float-start me-5"
-                        alt="Rounded profile picture">
-                    <p class="text-end fst-italic">8 minutes ago</p>
-                    <h4>rose-petal posted:</h2>
-                        <p>The quick, brown fox jumps over a lazy dog. DJs.</p>
-                </div>
-
-                <div class="col-6 border border-dark border-2 bg-white mb-3 rounded-5 p-3">
-                    <img src="../profile-imgs/daffodil-field.jpg"
-                        class="w-25 border border-secondary border-2 rounded-circle float-start me-5"
-                        alt="Rounded profile picture">
-                    <p class="text-end fst-italic">55 minutes ago</p>
-                    <h4>daffodil-field posted:</h4>
-                    <p>Scientific Name: Narcissus. Daffodil, daffadowndilly, jonquil, lent lily - narcissus are
-                        iconic flowers well known to ancient civilisations for their botanical and medicinal value,
-                        and many of their names derive from their appearance in everyday life.</p>
-                </div>
-
-                <div class="col-6 border border-dark border-2 bg-white mb-3 rounded-5 p-3">
-                    <img src="../profile-imgs/lily-pad.jpg"
-                        class="w-25 border border-secondary border-2 rounded-circle float-start me-5"
-                        alt="Rounded profile picture">
-                    <p class="text-end fst-italic">2 hours ago</p>
-                    <h4>lily-pad posted:</h4>
-                    <p>Zwei flinke Boxer jagen die quirlige Eva und ihren Mops durch Sylt. Franz jagt</p>
-                </div>
-
-                <div class="col-6 border border-dark border-2 bg-white mb-3 rounded-5 p-3">
-                    <img src="../profile-imgs/tulip-stem.jpg"
-                        class="w-25 border border-secondary border-2 rounded-circle float-start me-5"
-                        alt="Rounded profile picture">
-                    <p class="text-end fst-italic">7 hours ago</p>
-                    <h4>tulip-stem posted:</h4>
-                    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt
-                        ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>
-                </div>
-
+                <h2 class="text-center">picture posts</h2>
                 <div class="col-6 border border-dark border-2 bg-white mb-3 rounded-5 p-3">
                     <img src="../profile-imgs/orchid-bed.jpg"
                         class="w-25 border border-secondary border-2 rounded-circle float-start me-5"
@@ -133,19 +95,6 @@
                                 alt="A path leading to a beach"></a>
                         <a href="" class="mx-1"><img src="../images/beach-sunglasses.jpg"
                                 class="img-thumbnail h-25 w-25" alt="A pair of sunglasses sitting in the beach"></a>
-
-                </div>
-
-                <div class="col-6 border border-dark border-2 bg-white mb-3 rounded-5 p-3">
-                    <img src="../profile-imgs/red-carnation.jpg"
-                        class="w-25 border border-secondary border-2 rounded-circle float-start me-5"
-                        alt="Rounded profile picture">
-                    <p class="text-end fst-italic">April 19th</p>
-                    <h4>red-carnation posted:</h4>
-                    <p>But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was
-                        born and I will give you a complete account of the system, and expound the actual teachings of
-                        the great explorer of the truth, the master-builder of human happiness.</p>
-
                 </div>
 
                 <div class="col-6 border border-dark border-2 bg-white mb-3 rounded-5 p-3">
@@ -172,13 +121,33 @@
                     <img src="../profile-imgs/daffodil-field.jpg"
                         class="w-25 border border-secondary border-2 rounded-circle float-start me-5"
                         alt="Rounded profile picture">
-                    <p class="text-end fst-italic">April 17th</p>
+                    <p class="text-end fst-italic">April 14th</p>
+                    <h4>daffodil-field posted:</h2>
+                        <a href="" class="mx-1"><img src="../images/white-daffodil-field.jpg"
+                                class="img-thumbnail h-25 w-25" alt="Field of white daffodils"></a>
+                        <a href="" class="mx-1"><img src="../images/yellow-daffodil-bouquet.jpg"
+                                class="img-thumbnail h-25 w-25" alt="Bouquet of yellow daffodils"></a>
+                        <a href="" class="mx-1"><img src="../images/white-daffodil-single.jpg"
+                                class="img-thumbnail h-25 w-25" alt="A single white daffodil"></a>
+                        <a href="" class="mx-1"><img src="../images/yellow-daffodil-closeup.jpg"
+                                class="img-thumbnail w-25" alt="Closeup of yellow daffodils"></a>
+                </div>
+
+                <div class="col-6 border border-dark border-2 bg-white mb-3 rounded-5 p-3">
+                    <img src="../profile-imgs/daffodil-field.jpg"
+                        class="w-25 border border-secondary border-2 rounded-circle float-start me-5"
+                        alt="Rounded profile picture">
+                    <p class="text-end fst-italic">April 12th</p>
                     <h4>daffodil-field posted:</h4>
-                    <p>Daffodils are a hardy perennials that come back year after year, spreading and often
-                        naturalizing. They are a fall-planted bulb usually planted in October and the flowers bloom in
-                        late winter or early spring. (They are the March birth flower, after all!) Most daffodils grow
-                        easily in most regions of North America, except in the hottest, wettest areas, such as South
-                        Florida. </p>
+                    <a href="" class="mx-1"><img src="../images/yellow-daffodil-single.jpg"
+                            class="img-thumbnail h-25 w-25" alt="A single yellow daffodil"></a>
+                    <a href="" class="mx-1"><img src="../images/white-daffodil-pair.jpg" class="img-thumbnail h-25 w-25"
+                            alt="A pair of white daffodils"></a>
+                    <a href="" class="mx-1"><img src="../images/yellow-daffodil-table.jpg"
+                            class="img-thumbnail h-25 w-25"
+                            alt="A table decorated with a small yellow daffodil bouquet"></a>
+                    <a href="" class="mx-1"><img src="../images/white-daffodil-closeup.jpg" class="img-thumbnail w-25"
+                            alt="Closeup of white daffodils"></a>
                 </div>
 
             </div>

@@ -13,33 +13,38 @@
 <body class="bg-black bg-opacity-25">
     <header class="bg-primary bg-opacity-25">
         <section class="my-0 bg-dark"><!--Border top-->&#xA0;</section>
-        <section class="row g-0 px-5 pb-3">
-            <div class="col-6">
-                <a href="../index.html"><img src="../icons/Logo.png" class="mt-3 ms-3" alt="large blooom logo" /></a>
+        <section class="row">
+            <div class="col-1 p-3">
+                <a href="../index.html"><img src="../icons/logo.png" class="w-100 ms-3" alt="blooom logo" /></a>
             </div>
-            <div class="col-6 navbar">
-                <nav class="navbar-nav">
-                    <ul class="d-inline-flex list-group-numbered">
-                        <li class="mt-3 mx-3">
-                            <a href="../feed/index.html" class="nav-link text-center">
-                                <p>feed</p>
-                                <img src="../icons/rss.png" class="w-50" alt="Feed icon">
-                            </a>
-                        </li>
-                        <li class="mt-3 mx-3">
-                            <a href="" class="nav-link text-center">
-                                <p>search</p>
-                                <img src="../icons/magnifiying-glass.png" class="w-50" alt="Magnifying glass icon">
-                            </a>
-                        </li>
-                        <li class="mt-3 mx-3">
-                            <a href="index.html" class="nav-link text-center">
-                                <p>profile</p>
-                                <img src="../icons/user.png" class="w-50" alt="Profile icon">
-                            </a>
-                        </li>
-                    </ul>
-                </nav>
+            <nav class="col-5 p-3">
+                <ul class="d-inline-flex list-group-numbered">
+                    <li class="mt-3 mx-3">
+                        <a href="../feed/index.html" class="nav-link text-center">
+                            <p>feed</p>
+                            <img src="../icons/rss.png" class="w-50" alt="Feed icon">
+                        </a>
+                    </li>
+                    <li class="mt-3 mx-3">
+                        <a href="index.html" class="nav-link text-center">
+                            <p>profile</p>
+                            <img src="../icons/user.png" class="w-50" alt="Profile icon">
+                        </a>
+                    </li>
+                    <li class="mt-3 mx-3">
+                        <a href="../feed/new-post.html" class="nav-link text-center">
+                            <p>add post</p>
+                            <img src="../icons/add.png" class="w-50" alt="Add icon">
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="col-6 align-self-end">
+                <form action="/action_page.php">
+                    <input type="text" placeholder="Search.." name="search" class="rounded-5 p-1">
+                    <button type="submit" class="btn p-0 mb-3"><img src="../icons/magnifiying-glass.png"
+                            class="w-25 m-0" alt="Magnifying glass icon"></button>
+                </form>
             </div>
         </section>
     </header>
@@ -48,117 +53,66 @@
 
         <!-- Profile section -->
         <section class="row bg-white mx-5 my-3 border border-dark border-2 rounded-5 p-3 text-center">
-            <div class="col-3">
-                <a href="" class="page-link h-100">
-                    <p>add as favourite</p>
-                    <img src="../icons/star-empty.png" class="h-25" alt="Empty star icon">
-                </a>
-            </div>
-            <div class="col-6">
-                <h1>daffodil-field</h1>
-            </div>
-            <div class="col-3">
-                <a href="" class="page-link h-100">
-                    <p>settings</p>
-                    <img src="../icons/settings.png" class="h-25" alt="Cogwheel icon">
-                </a>
-            </div>
+            <h1>daffodil-field</h1>
             <div class="col-12">
                 <img src="../profile-imgs/daffodil-field.jpg"
                     class="w-25 border border-secondary border-2 rounded-circle" alt="Round profile picture">
             </div>
-            <div class="col-12">
-                <h2>janet dowell</h2>
-                <i>Registered on march 31st, 2023</i>
-                <h3 class="mt-3">about me</h3>
-                <p>I'm no flower girl, but succulents are pretty. &#10094;3</p>
-            </div>
+            <h2>janet dowell</h2>
+            <p class="fst-italic">Registered on march 31st, 2023</p>
+            <h3 class="mt-2">about me</h3>
+            <p>I'm no flower girl, but succulents are pretty. &#10094;3</p>
             <div class="row-cols-5">
-                <button class="btn btn-primary btn-outline-dark rounded-5 fw-semibold">follow</button>
+                <button class="btn btn-primary btn-outline-dark mt-2 rounded-5 fw-semibold">follow</button>
             </div>
         </section>
         <section class="text-center">
             <ul class="d-inline-flex list-group-numbered">
-                <li class="mt-3 mx-5">
-                    <h3><a href="#profile-posts" class="page-link">posts</a></h3>
+                <li class="mt-3 me-5">
+                    <h3><a href="#profile-posts" class="page-link">posts &#10095;&#10095;</a></h3>
                 </li>
-                <li class="mt-3 mx-5">
-                    <h3><a href="#profile-following" class="page-link">following</a></h3>
+                <li class="mt-3 me-5">
+                    <h3><a href="#profile-following" class="page-link">following &#10095;&#10095;</a></h3>
                 </li>
-                <li class="mt-3 mx-5">
-                    <h3><a href="#profile-followers" class="page-link">followers</a></h3>
+                <li class="mt-3">
+                    <h3><a href="#profile-followers" class="page-link">followers &#10095;&#10095;</a></h3>
                 </li>
             </ul>
         </section>
 
         <!--Posts section-->
         <section id="profile-posts" class="mb-5">
-            <div class="border border-dark border-2 bg-white mb-3 rounded-5 p-3">
-                <div class="row">
-                    <div class="col-3">
-                        <img src="../profile-imgs/daffodil-field.jpg"
-                            class="w-75 border border-secondary border-2 rounded-circle" alt="Rounded profile picture">
-                    </div>
-                    <h2 class="col-6">daffodil-field</h2>
-                    <p class="col-3">Posted 55 minutes ago</p>
-                </div>
-                <div class="col-12">
+            <h2 class="my-5 text-center">daffodil-field's posts</h2>
+            <div class="row">
+                <div class="col-6 border border-dark border-2 bg-white mb-3 rounded-5 p-3">
+                    <img src="../profile-imgs/daffodil-field.jpg"
+                        class="w-25 border border-secondary border-2 rounded-circle float-start me-5"
+                        alt="Rounded profile picture">
+                    <p class="text-end fst-italic">Posted 55 minutes ago</p>
                     <p>Scientific Name: Narcissus. Daffodil, daffadowndilly, jonquil, lent lily - narcissus are iconic
                         flowers well known to ancient civilisations for their botanical and medicinal value, and many of
                         their names derive from their appearance in everyday life.</p>
+
                 </div>
-                <div class="row mt-3 text-end">
-                    <div class="col-10 w-25">
-                        <a href="" class="col-1 mx-1"><img src="../icons/comment.png" class="w-25"
-                                alt="Comment bubble icon"></a>
-                    </div>
-                    <div class="col-1 w-25">
-                        <a href="" class="col-1 mx-1"><img src="../icons/heart.png" class="w-25" alt="Heart icon"></a>
-                    </div>
-                    <div class="col-1 w-25">
-                        <a href="" class="col-1 mx-1"><img src="../icons/share.png" class="w-25" alt="Share icon"></a>
-                    </div>
-                </div>
-            </div>
-            <div class="border border-dark border-2 bg-white mb-3 rounded-5 p-3">
-                <div class="row">
-                    <div class="col-3">
-                        <img src="../profile-imgs/daffodil-field.jpg"
-                            class="w-75 border border-secondary border-2 rounded-circle" alt="Rounded profile picture">
-                    </div>
-                    <h2 class="col-6">daffodil-field</h2>
-                    <p class="col-3">Posted on april 17th</p>
-                </div>
-                <div class="col-12">
+                <div class="col-6 border border-dark border-2 bg-white mb-3 rounded-5 p-3">
+                    <img src="../profile-imgs/daffodil-field.jpg"
+                        class="w-25 border border-secondary border-2 rounded-circle float-start me-5"
+                        alt="Rounded profile picture">
+                    <p class="text-end fst-italic">Posted on april 17th</p>
                     <p>Daffodils are a hardy perennials that come back year after year, spreading and often
                         naturalizing.
-                        They are a fall-planted bulb usually planted in October and the flowers bloom in late winter or
-                        early spring. (They are the March birth flower, after all!) Most daffodils grow easily in most
+                        They are a fall-planted bulb usually planted in October and the flowers bloom in late winter
+                        or
+                        early spring. (They are the March birth flower, after all!) Most daffodils grow easily in
+                        most
                         regions of North America, except in the hottest, wettest areas, such as South Florida.</p>
+
                 </div>
-                <div class="row mt-3 text-end">
-                    <div class="col-10 w-25">
-                        <a href="" class="col-1 mx-1"><img src="../icons/comment.png" class="w-25"
-                                alt="Comment bubble icon"></a>
-                    </div>
-                    <div class="col-1 w-25">
-                        <a href="" class="col-1 mx-1"><img src="../icons/heart.png" class="w-25" alt="Heart icon"></a>
-                    </div>
-                    <div class="col-1 w-25">
-                        <a href="" class="col-1 mx-1"><img src="../icons/share.png" class="w-25" alt="Share icon"></a>
-                    </div>
-                </div>
-            </div>
-            <div class="border border-dark border-2 bg-white mb-3 rounded-5 p-3">
-                <div class="row">
-                    <div class="col-3">
-                        <img src="../profile-imgs/daffodil-field.jpg"
-                            class="w-75 border border-secondary border-2 rounded-circle" alt="Rounded profile picture">
-                    </div>
-                    <h2 class="col-6">daffodil-field</h2>
-                    <p class="col-3">Posted on april 14th</p>
-                </div>
-                <div class="col-12 text-center">
+                <div class="col-6 border border-dark border-2 bg-white mb-3 rounded-5 p-3">
+                    <img src="../profile-imgs/daffodil-field.jpg"
+                        class="w-25 border border-secondary border-2 rounded-circle float-start me-5"
+                        alt="Rounded profile picture">
+                    <p class="text-end fst-italic">Posted on april 14th</p>
                     <a href="" class="col-3 mx-1"><img src="../images/white-daffodil-field.jpg"
                             class="img-thumbnail h-25 w-25" alt="Field of white daffodils"></a>
                     <a href="" class="col-3 mx-1"><img src="../images/yellow-daffodil-bouquet.jpg"
@@ -168,29 +122,11 @@
                     <a href="" class="col-3 mx-1"><img src="../images/yellow-daffodil-closeup.jpg"
                             class="img-thumbnail w-25" alt="Closeup of yellow daffodils"></a>
                 </div>
-                <div class="row mt-3 text-end">
-                    <div class="col-10 w-25">
-                        <a href="" class="col-1 mx-1"><img src="../icons/comment.png" class="w-25"
-                                alt="Comment bubble icon"></a>
-                    </div>
-                    <div class="col-1 w-25">
-                        <a href="" class="col-1 mx-1"><img src="../icons/heart.png" class="w-25" alt="Heart icon"></a>
-                    </div>
-                    <div class="col-1 w-25">
-                        <a href="" class="col-1 mx-1"><img src="../icons/share.png" class="w-25" alt="Share icon"></a>
-                    </div>
-                </div>
-            </div>
-            <div class="border border-dark border-2 bg-white mb-3 rounded-5 p-3">
-                <div class="row">
-                    <div class="col-3">
-                        <img src="../profile-imgs/daffodil-field.jpg"
-                            class="w-75 border border-secondary border-2 rounded-circle" alt="Rounded profile picture">
-                    </div>
-                    <h2 class="col-6">daffodil-field</h2>
-                    <p class="col-3">Posted on april 12th</p>
-                </div>
-                <div class="col-12 text-center">
+                <div class="col-6 border border-dark border-2 bg-white mb-3 rounded-5 p-3">
+                    <img src="../profile-imgs/daffodil-field.jpg"
+                        class="w-25 border border-secondary border-2 rounded-circle float-start me-5"
+                        alt="Rounded profile picture">
+                    <p class="text-end fst-italic">Posted on april 12th</p>
                     <a href="" class="col-3 mx-1"><img src="../images/yellow-daffodil-single.jpg"
                             class="img-thumbnail h-25 w-25" alt="A single yellow daffodil"></a>
                     <a href="" class="col-3 mx-1"><img src="../images/white-daffodil-pair.jpg"
@@ -201,27 +137,21 @@
                     <a href="" class="col-3 mx-1"><img src="../images/white-daffodil-closeup.jpg"
                             class="img-thumbnail w-25" alt="Closeup of white daffodils"></a>
                 </div>
-                <div class="row mt-3 text-end">
-                    <div class="col-10 w-25">
-                        <a href="" class="col-1 mx-1"><img src="../icons/comment.png" class="w-25"
-                                alt="Comment bubble icon"></a>
-                    </div>
-                    <div class="col-1 w-25">
-                        <a href="" class="col-1 mx-1"><img src="../icons/heart.png" class="w-25" alt="Heart icon"></a>
-                    </div>
-                    <div class="col-1 w-25">
-                        <a href="" class="col-1 mx-1"><img src="../icons/share.png" class="w-25" alt="Share icon"></a>
-                    </div>
-                </div>
             </div>
         </section>
 
+
         <!-- Following section -->
         <section id="profile-following" class="mb-5 text-center">
-
-            <!-- Favourite section -->
-            <h2 class="my-5">favourites</h2>
+            <h2 class="my-5">following</h2>
             <div class="row">
+                <div class="col-6 border border-dark border-2 bg-white mb-3 rounded-5 p-3">
+                    <img src="../profile-imgs/anemone-flower.jpg"
+                        class="w-25 border border-secondary border-2 rounded-circle float-start me-5"
+                        alt="anemone-flower's profile picture">
+                    <button class="rounded-5 btn btn-primary btn-outline-dark fw-semibold float-end">add</button>
+                    <h3 class="m-5"><a href="" class="page-link">anemone-flower</a></h3>
+                </div>
                 <div class="col-6 border border-dark border-2 bg-white mb-3 rounded-5 p-3">
                     <img src="../profile-imgs/chrysanthemum.jpg"
                         class="w-25 border border-secondary border-2 rounded-circle float-start me-5"
@@ -236,34 +166,6 @@
                     <button class="rounded-5 btn btn-primary btn-outline-dark fw-semibold float-end">add</button>
                     <h3 class="m-5"><a href="" class="page-link">freesia-bouquet</a></h3>
                 </div>
-            </div>
-            <div class="row">
-                <div class="col-6 border border-dark border-2 bg-white mb-3 rounded-5 p-3">
-                    <img src="../profile-imgs/poppy-field.jpg"
-                        class="w-25 border border-secondary border-2 rounded-circle float-start me-5"
-                        alt="poppy-field's profile picture">
-                    <button class="rounded-5 btn btn-primary btn-outline-dark fw-semibold float-end">add</button>
-                    <h3 class="m-5"><a href="" class="page-link">poppy-field</a></h3>
-                </div>
-                <div class="col-6 border border-dark border-2 bg-white mb-3 rounded-5 p-3">
-                    <img src="../profile-imgs/rose-petal.jpg"
-                        class="w-25 border border-secondary border-2 rounded-circle float-start me-5"
-                        alt="rose-petal's profile picture">
-                    <button class="rounded-5 btn btn-primary btn-outline-dark fw-semibold float-end">add</button>
-                    <h3 class="m-5"><a href="" class="page-link">rose-petal</a></h3>
-                </div>
-            </div>
-
-            <!-- Other following section -->
-            <h2 class="my-5">following</h2>
-            <div class="row">
-                <div class="col-6 border border-dark border-2 bg-white mb-3 rounded-5 p-3">
-                    <img src="../profile-imgs/anemone-flower.jpg"
-                        class="w-25 border border-secondary border-2 rounded-circle float-start me-5"
-                        alt="anemone-flower's profile picture">
-                    <button class="rounded-5 btn btn-primary btn-outline-dark fw-semibold float-end">add</button>
-                    <h3 class="m-5"><a href="" class="page-link">anemone-flower</a></h3>
-                </div>
                 <div class="col-6 border border-dark border-2 bg-white mb-3 rounded-5 p-3">
                     <img src="../profile-imgs/gladiolous-bed.jpg"
                         class="w-25 border border-secondary border-2 rounded-circle float-start me-5"
@@ -271,8 +173,6 @@
                     <button class="rounded-5 btn btn-primary btn-outline-dark fw-semibold float-end">add</button>
                     <h3 class="m-5"><a href="" class="page-link">gladiolous-bed</a></h3>
                 </div>
-            </div>
-            <div class="row">
                 <div class="col-6 border border-dark border-2 bg-white mb-3 rounded-5 p-3">
                     <img src="../profile-imgs/hyacinth-petal.jpg"
                         class="w-25 border border-secondary border-2 rounded-circle float-start me-5"
@@ -287,8 +187,6 @@
                     <button class="rounded-5 btn btn-primary btn-outline-dark fw-semibold float-end">add</button>
                     <h3 class="m-5"><a href="" class="page-link">lily-pad</a></h3>
                 </div>
-            </div>
-            <div class="row">
                 <div class="col-6 border border-dark border-2 bg-white mb-3 rounded-5 p-3">
                     <img src="../profile-imgs/magnolia-bouquet.jpg"
                         class="w-25 border border-secondary border-2 rounded-circle float-start me-5"
@@ -303,8 +201,13 @@
                     <button class="rounded-5 btn btn-primary btn-outline-dark fw-semibold float-end">add</button>
                     <h3 class="m-5"><a href="" class="page-link">orchid-bed</a></h3>
                 </div>
-            </div>
-            <div class="row">
+                <div class="col-6 border border-dark border-2 bg-white mb-3 rounded-5 p-3">
+                    <img src="../profile-imgs/poppy-field.jpg"
+                        class="w-25 border border-secondary border-2 rounded-circle float-start me-5"
+                        alt="poppy-field's profile picture">
+                    <button class="rounded-5 btn btn-primary btn-outline-dark fw-semibold float-end">add</button>
+                    <h3 class="m-5"><a href="" class="page-link">poppy-field</a></h3>
+                </div>
                 <div class="col-6 border border-dark border-2 bg-white mb-3 rounded-5 p-3">
                     <img src="../profile-imgs/red-carnation.jpg"
                         class="w-25 border border-secondary border-2 rounded-circle float-start me-5"
@@ -313,14 +216,19 @@
                     <h3 class="m-5"><a href="" class="page-link">red-carnation</a></h3>
                 </div>
                 <div class="col-6 border border-dark border-2 bg-white mb-3 rounded-5 p-3">
+                    <img src="../profile-imgs/rose-petal.jpg"
+                        class="w-25 border border-secondary border-2 rounded-circle float-start me-5"
+                        alt="rose-petal's profile picture">
+                    <button class="rounded-5 btn btn-primary btn-outline-dark fw-semibold float-end">add</button>
+                    <h3 class="m-5"><a href="" class="page-link">rose-petal</a></h3>
+                </div>
+                <div class="col-6 border border-dark border-2 bg-white mb-3 rounded-5 p-3">
                     <img src="../profile-imgs/sunflower-seed.jpg"
                         class="w-25 border border-secondary border-2 rounded-circle float-start me-5"
                         alt="sunflower-seed's profile picture">
                     <button class="rounded-5 btn btn-primary btn-outline-dark fw-semibold float-end">add</button>
                     <h3 class="m-5"><a href="" class="page-link">sunflower-seed</a></h3>
                 </div>
-            </div>
-            <div class="row">
                 <div class="col-6 border border-dark border-2 bg-white mb-3 rounded-5 p-3">
                     <img src="../profile-imgs/tulip-stem.jpg"
                         class="w-25 border border-secondary border-2 rounded-circle float-start me-5"
@@ -329,223 +237,104 @@
                     <h3 class="m-5"><a href="" class="page-link">tulip-stem</a></h3>
                 </div>
             </div>
-
-
-
-            <div class="border border-dark border-2 bg-white mb-3 rounded-5 p-3">
+            <!-- Followers section -->
+            <section id="profile-followers" class="mb-5 text-center">
+                <h2 class="my-5">followers</h2>
                 <div class="row">
-                    <div class="col-3">
-                        <img src="../profile-imgs/tulip-stem.jpg"
-                            class="w-75 border border-secondary border-2 rounded-circle"
-                            alt="tulip-stem's profile picture">
-                    </div>
-                    <h3 class="col-4"><a href="" class="page-link">tulip-stem</a></h3>
-                    <button class="col-2 rounded-5 btn btn-primary btn-outline-dark fw-semibold">add</button>
-                    <a href="" class="col-3 page-link text-center">
-                        <p>add as favourite</p>
-                        <img src="../icons/star-empty.png" class="col-3" alt="Empty star icon">
-                    </a>
-                </div>
-        </section>
-        <section id="profile-followers" class="mb-5">
-            <!--Followers section-->
-            <div class="border border-dark border-2 bg-white mb-3 rounded-5 p-3">
-                <div class="row">
-                    <div class="col-3">
+                    <div class="col-6 border border-dark border-2 bg-white mb-3 rounded-5 p-3">
                         <img src="../profile-imgs/anemone-flower.jpg"
-                            class="w-75 border border-secondary border-2 rounded-circle"
+                            class="w-25 border border-secondary border-2 rounded-circle float-start me-5"
                             alt="anemone-flower's profile picture">
+                        <button class="rounded-5 btn btn-primary btn-outline-dark fw-semibold float-end">add</button>
+                        <h3 class="m-5"><a href="" class="page-link">anemone-flower</a></h3>
                     </div>
-                    <h3 class="col-4"><a href="" class="page-link">anemone-flower</a></h3>
-                    <button class="col-2 rounded-5 btn btn-primary btn-outline-dark fw-semibold">add</button>
-                    <a href="" class="col-3 page-link text-center">
-                        <p>add as favourite</p>
-                        <img src="../icons/star-empty.png" class="col-3" alt="Empty star icon">
-                    </a>
-                </div>
-            </div>
-            <div class="border border-dark border-2 bg-white mb-3 rounded-5 p-3">
-                <div class="row">
-                    <div class="col-3">
+                    <div class="col-6 border border-dark border-2 bg-white mb-3 rounded-5 p-3">
                         <img src="../profile-imgs/chrysanthemum.jpg"
-                            class="w-75 border border-secondary border-2 rounded-circle"
+                            class="w-25 border border-secondary border-2 rounded-circle float-start me-5"
                             alt="chrysanthemum's profile picture">
+                        <button class="rounded-5 btn btn-primary btn-outline-dark fw-semibold float-end">add</button>
+                        <h3 class="m-5"><a href="" class="page-link">chrysanthemum</a></h3>
                     </div>
-                    <h3 class="col-4"><a href="" class="page-link">chrysanthemum</a></h3>
-                    <button class="col-2 rounded-5 btn btn-primary btn-outline-dark fw-semibold">add</button>
-                    <a href="" class="col-3 page-link text-center">
-                        <p>favourite</p>
-                        <img src="../icons/star-full.png" class="col-3" alt="Filled star icon">
-                    </a>
-                </div>
-            </div>
-            <div class="border border-dark border-2 bg-white mb-3 rounded-5 p-3">
-                <div class="row">
-                    <div class="col-3">
+                    <div class="col-6 border border-dark border-2 bg-white mb-3 rounded-5 p-3">
                         <img src="../profile-imgs/freesia-bouquet.jpg"
-                            class="w-75 border border-secondary border-2 rounded-circle"
+                            class="w-25 border border-secondary border-2 rounded-circle float-start me-5"
                             alt="freesia-bouquet's profile picture">
+                        <button class="rounded-5 btn btn-primary btn-outline-dark fw-semibold float-end">add</button>
+                        <h3 class="m-5"><a href="" class="page-link">freesia-bouquet</a></h3>
                     </div>
-                    <h3 class="col-4"><a href="" class="page-link">freesia-bouquet</a></h3>
-                    <button class="col-2 rounded-5 btn btn-primary btn-outline-dark fw-semibold">add</button>
-                    <a href="" class="col-3 page-link text-center">
-                        <p>favourite</p>
-                        <img src="../icons/star-full.png" class="col-3" alt="Filled star icon">
-                    </a>
-                </div>
-            </div>
-            <div class="border border-dark border-2 bg-white mb-3 rounded-5 p-3">
-                <div class="row">
-                    <div class="col-3">
+                    <div class="col-6 border border-dark border-2 bg-white mb-3 rounded-5 p-3">
                         <img src="../profile-imgs/gladiolous-bed.jpg"
-                            class="w-75 border border-secondary border-2 rounded-circle"
+                            class="w-25 border border-secondary border-2 rounded-circle float-start me-5"
                             alt="gladiolous-bed's profile picture">
+                        <button class="rounded-5 btn btn-primary btn-outline-dark fw-semibold float-end">add</button>
+                        <h3 class="m-5"><a href="" class="page-link">gladiolous-bed</a></h3>
                     </div>
-                    <h3 class="col-4"><a href="" class="page-link">gladiolous-bed</a></h3>
-                    <button class="col-2 rounded-5 btn btn-primary btn-outline-dark fw-semibold">add</button>
-                    <a href="" class="col-3 page-link text-center">
-                        <p>add as favourite</p>
-                        <img src="../icons/star-empty.png" class="col-3" alt="Empty star icon">
-                    </a>
-                </div>
-            </div>
-            <div class="border border-dark border-2 bg-white mb-3 rounded-5 p-3">
-                <div class="row">
-                    <div class="col-3">
+                    <div class="col-6 border border-dark border-2 bg-white mb-3 rounded-5 p-3">
                         <img src="../profile-imgs/hyacinth-petal.jpg"
-                            class="w-75 border border-secondary border-2 rounded-circle"
+                            class="w-25 border border-secondary border-2 rounded-circle float-start me-5"
                             alt="hyacinth-petal's profile picture">
+                        <button class="rounded-5 btn btn-primary btn-outline-dark fw-semibold float-end">add</button>
+                        <h3 class="m-5"><a href="" class="page-link">hyacinth-petal</a></h3>
                     </div>
-                    <h3 class="col-4"><a href="" class="page-link">hyacinth-petal</a></h3>
-                    <button class="col-2 rounded-5 btn btn-primary btn-outline-dark fw-semibold">add</button>
-                    <a href="" class="col-3 page-link text-center">
-                        <p>add as favourite</p>
-                        <img src="../icons/star-empty.png" class="col-3" alt="Empty star icon">
-                    </a>
-                </div>
-            </div>
-            <div class="border border-dark border-2 bg-white mb-3 rounded-5 p-3">
-                <div class="row">
-                    <div class="col-3">
+                    <div class="col-6 border border-dark border-2 bg-white mb-3 rounded-5 p-3">
                         <img src="../profile-imgs/lily-pad.jpg"
-                            class="w-75 border border-secondary border-2 rounded-circle"
+                            class="w-25 border border-secondary border-2 rounded-circle float-start me-5"
                             alt="lily-pad's profile picture">
+                        <button class="rounded-5 btn btn-primary btn-outline-dark fw-semibold float-end">add</button>
+                        <h3 class="m-5"><a href="" class="page-link">lily-pad</a></h3>
                     </div>
-                    <h3 class="col-4"><a href="" class="page-link">lily-pad</a></h3>
-                    <button class="col-2 rounded-5 btn btn-primary btn-outline-dark fw-semibold">add</button>
-                    <a href="" class="col-3 page-link text-center">
-                        <p>add as favourite</p>
-                        <img src="../icons/star-empty.png" class="col-3" alt="Empty star icon">
-                    </a>
-                </div>
-            </div>
-            <div class="border border-dark border-2 bg-white mb-3 rounded-5 p-3">
-                <div class="row">
-                    <div class="col-3">
+                    <div class="col-6 border border-dark border-2 bg-white mb-3 rounded-5 p-3">
                         <img src="../profile-imgs/magnolia-bouquet.jpg"
-                            class="w-75 border border-secondary border-2 rounded-circle"
+                            class="w-25 border border-secondary border-2 rounded-circle float-start me-5"
                             alt="magnolia-bouquet's profile picture">
+                        <button class="rounded-5 btn btn-primary btn-outline-dark fw-semibold float-end">add</button>
+                        <h3 class="m-5"><a href="" class="page-link">magnolia-bouquet</a></h3>
                     </div>
-                    <h3 class="col-4"><a href="" class="page-link">magnolia-bouquet</a></h3>
-                    <button class="col-2 rounded-5 btn btn-primary btn-outline-dark fw-semibold">add</button>
-                    <a href="" class="col-3 page-link text-center">
-                        <p>add as favourite</p>
-                        <img src="../icons/star-empty.png" class="col-3" alt="Empty star icon">
-                    </a>
-                </div>
-            </div>
-            <div class="border border-dark border-2 bg-white mb-3 rounded-5 p-3">
-                <div class="row">
-                    <div class="col-3">
+                    <div class="col-6 border border-dark border-2 bg-white mb-3 rounded-5 p-3">
                         <img src="../profile-imgs/orchid-bed.jpg"
-                            class="w-75 border border-secondary border-2 rounded-circle"
+                            class="w-25 border border-secondary border-2 rounded-circle float-start me-5"
                             alt="orchid-bed's profile picture">
+                        <button class="rounded-5 btn btn-primary btn-outline-dark fw-semibold float-end">add</button>
+                        <h3 class="m-5"><a href="" class="page-link">orchid-bed</a></h3>
                     </div>
-                    <h3 class="col-4"><a href="" class="page-link">orchid-bed</a></h3>
-                    <button class="col-2 rounded-5 btn btn-primary btn-outline-dark fw-semibold">add</button>
-                    <a href="" class="col-3 page-link text-center">
-                        <p>add as favourite</p>
-                        <img src="../icons/star-empty.png" class="col-3" alt="Empty star icon">
-                    </a>
-                </div>
-            </div>
-            <div class="border border-dark border-2 bg-white mb-3 rounded-5 p-3">
-                <div class="row">
-                    <div class="col-3">
+                    <div class="col-6 border border-dark border-2 bg-white mb-3 rounded-5 p-3">
                         <img src="../profile-imgs/poppy-field.jpg"
-                            class="w-75 border border-secondary border-2 rounded-circle"
+                            class="w-25 border border-secondary border-2 rounded-circle float-start me-5"
                             alt="poppy-field's profile picture">
+                        <button class="rounded-5 btn btn-primary btn-outline-dark fw-semibold float-end">add</button>
+                        <h3 class="m-5"><a href="" class="page-link">poppy-field</a></h3>
                     </div>
-                    <h3 class="col-4"><a href="" class="page-link">poppy-field</a></h3>
-                    <button class="col-2 rounded-5 btn btn-primary btn-outline-dark fw-semibold">add</button>
-                    <a href="" class="col-3 page-link text-center">
-                        <p>favourite</p>
-                        <img src="../icons/star-full.png" class="col-3" alt="Filled star icon">
-                    </a>
-                </div>
-            </div>
-            <div class="border border-dark border-2 bg-white mb-3 rounded-5 p-3">
-                <div class="row">
-                    <div class="col-3">
+                    <div class="col-6 border border-dark border-2 bg-white mb-3 rounded-5 p-3">
                         <img src="../profile-imgs/red-carnation.jpg"
-                            class="w-75 border border-secondary border-2 rounded-circle"
+                            class="w-25 border border-secondary border-2 rounded-circle float-start me-5"
                             alt="red-carnation's profile picture">
+                        <button class="rounded-5 btn btn-primary btn-outline-dark fw-semibold float-end">add</button>
+                        <h3 class="m-5"><a href="" class="page-link">red-carnation</a></h3>
                     </div>
-                    <h3 class="col-4"><a href="" class="page-link">red-carnation</a></h3>
-                    <button class="col-2 rounded-5 btn btn-primary btn-outline-dark fw-semibold">add</button>
-                    <a href="" class="col-3 page-link text-center">
-                        <p>add as favourite</p>
-                        <img src="../icons/star-empty.png" class="col-3" alt="Empty star icon">
-                    </a>
-                </div>
-            </div>
-            <div class="border border-dark border-2 bg-white mb-3 rounded-5 p-3">
-                <div class="row">
-                    <div class="col-3">
+                    <div class="col-6 border border-dark border-2 bg-white mb-3 rounded-5 p-3">
                         <img src="../profile-imgs/rose-petal.jpg"
-                            class="w-75 border border-secondary border-2 rounded-circle"
+                            class="w-25 border border-secondary border-2 rounded-circle float-start me-5"
                             alt="rose-petal's profile picture">
+                        <button class="rounded-5 btn btn-primary btn-outline-dark fw-semibold float-end">add</button>
+                        <h3 class="m-5"><a href="" class="page-link">rose-petal</a></h3>
                     </div>
-                    <h3 class="col-4"><a href="" class="page-link">rose-petal</a></h3>
-                    <button class="col-2 rounded-5 btn btn-primary btn-outline-dark fw-semibold">add</button>
-                    <a href="" class="col-3 page-link text-center">
-                        <p>favourite</p>
-                        <img src="../icons/star-full.png" class="col-3" alt="Filled star icon">
-                    </a>
-                </div>
-            </div>
-            <div class="border border-dark border-2 bg-white mb-3 rounded-5 p-3">
-                <div class="row">
-                    <div class="col-3">
+                    <div class="col-6 border border-dark border-2 bg-white mb-3 rounded-5 p-3">
                         <img src="../profile-imgs/sunflower-seed.jpg"
-                            class="w-75 border border-secondary border-2 rounded-circle"
+                            class="w-25 border border-secondary border-2 rounded-circle float-start me-5"
                             alt="sunflower-seed's profile picture">
+                        <button class="rounded-5 btn btn-primary btn-outline-dark fw-semibold float-end">add</button>
+                        <h3 class="m-5"><a href="" class="page-link">sunflower-seed</a></h3>
                     </div>
-                    <h3 class="col-4"><a href="" class="page-link">sunflower-seed</a></h3>
-                    <button class="col-2 rounded-5 btn btn-primary btn-outline-dark fw-semibold">add</button>
-                    <a href="" class="col-3 page-link text-center">
-                        <p>add as favourite</p>
-                        <img src="../icons/star-empty.png" class="col-3" alt="Empty star icon">
-                    </a>
-                </div>
-            </div>
-            <div class="border border-dark border-2 bg-white mb-3 rounded-5 p-3">
-                <div class="row">
-                    <div class="col-3">
+                    <div class="col-6 border border-dark border-2 bg-white mb-3 rounded-5 p-3">
                         <img src="../profile-imgs/tulip-stem.jpg"
-                            class="w-75 border border-secondary border-2 rounded-circle"
+                            class="w-25 border border-secondary border-2 rounded-circle float-start me-5"
                             alt="tulip-stem's profile picture">
+                        <button class="rounded-5 btn btn-primary btn-outline-dark fw-semibold float-end">add</button>
+                        <h3 class="m-5"><a href="" class="page-link">tulip-stem</a></h3>
                     </div>
-                    <h3 class="col-4"><a href="" class="page-link">tulip-stem</a></h3>
-                    <button class="col-2 rounded-5 btn btn-primary btn-outline-dark fw-semibold">add</button>
-                    <a href="" class="col-3 page-link text-center">
-                        <p>add as favourite</p>
-                        <img src="../icons/star-empty.png" class="col-3" alt="Empty star icon">
-                    </a>
                 </div>
-            </div>
-        </section>
-        <section class="my-5">&#xA0;</section>
+            </section>
+            <section class="my-1">&#xA0;</section>
     </main>
 
     <footer class="fixed-bottom">

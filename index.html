@@ -26,13 +26,13 @@
   <main class="container">
     <section class="text-center">
       <h1 class="mt-5">Log in to blooom:</h1>
-      <form id="loginForm" name="loginForm" onsubmit="">
+      <form id="loginForm" name="loginForm" action="/profile/index.html" method="get" onsubmit="">
         <label for="username" class="mt-2">Username:</label><br>
         <input type="text" id="username" name="username" class="mt-1" required><br>
         <label for="password" class="mt-2">Password:</label><br>
-        <input type="password" id="password" name="password" class="mt-1" required minlength="8"><br>
+        <input type="password" id="password" name="password" class="mt-1" minlength="8" required><br>
         <input type="checkbox" id="remember" name="remember" class="mt-3">&#xA0; <i>Remember me.</i><br>
-        <input type="button" onclick="location.href='/profile/index.html';" value="log in to blooom" class="mt-3">
+        <input type="submit" value="log in to blooom" class="mt-3">
       </form>
       <p class="mt-3"><a href=""><i>Cancel</i></a></p>
     </section>
